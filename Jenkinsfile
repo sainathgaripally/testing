@@ -7,9 +7,6 @@ pipeline {
             }
         }
         stage ('sonarqube analysis') {
-            when {
-                branch "dev"
-            }
             steps {
                 echo 'skipping'
             }
