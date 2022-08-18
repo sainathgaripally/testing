@@ -1,12 +1,9 @@
 pipeline {
     agent any
-    environment {
-        PATH= "$PATH:/usr/share/maven"
-    }
     stages {
         stage ('packaging the application') {
             steps {
-                sh 'mvn clean package'
+                echo 'packaging'
             }
         }
         stage ('sonarqube analysis') {
