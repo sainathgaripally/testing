@@ -3,13 +3,10 @@ pipeline {
     stages {
         stage ('packaging the application') {
             steps {
-                echo 'packaging'
+                echo 'deploying'
             }
         }
         stage ('sonarqube analysis') {
-            when {
-                branch "dev"
-            }
             steps {
                 echo 'skipping'
             }
